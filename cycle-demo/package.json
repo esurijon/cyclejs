@@ -1,0 +1,25 @@
+{
+  "name": "cycle-bp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "beefy src/main.js:dist/main.js -- -t babelify",
+    "build": "browserify src/main.js -t babelify > dist/main.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cycle/core": "^5.0.1",
+    "@cycle/dom": "^7.1.1",
+    "rx": "^4.0.6"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babelify": "^6.4.0",
+    "beefy": "^2.1.5",
+    "browserify": "^11.2.0"
+  }
+}
